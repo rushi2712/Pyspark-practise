@@ -74,6 +74,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.types import *
 from pyspark.sql.functions import *
 
+#Spark Setup
 spark = SparkSession.builder.appName("Scenario-1").master("local[*]").getOrCreate()
 spark.sparkContext.setLogLevel("ERROR")
 
